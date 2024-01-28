@@ -7,12 +7,12 @@
 [node name="PipeStraight" type="Area2D"]
 script = ExtResource("1_4yq25")
 
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(0, -128, 168, -128, 168, -152, 248, -152, 248, 152, 168, 152, 168, 128, -168, 128, -168, 152, -248, 152, -248, -152, -168, -152, -168, -128)
+
 [node name="Empty" type="Sprite2D" parent="."]
 texture = ExtResource("2_nk5um")
 
 [node name="Full" type="Sprite2D" parent="."]
 visible = false
 texture = ExtResource("3_arn02")
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-polygon = PackedVector2Array(0, -128, 168, -128, 168, -152, 248, -152, 248, 152, 168, 152, 168, 128, -168, 128, -168, 152, -248, 152, -248, -152, -168, -152, -168, -128)
