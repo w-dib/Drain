@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://bbfc0y3ntlrc3"]
+
+[ext_resource type="Script" path="res://scenes/pipes/pipe.gd" id="1_32u3x"]
+[ext_resource type="Texture2D" uid="uid://cq3eaekvxt3x5" path="res://assets/graphics/empty/tile000.png" id="1_w2y14"]
+[ext_resource type="Texture2D" uid="uid://b6nc11rdld6hx" path="res://assets/graphics/full/tile000.png" id="2_nwjce"]
+[ext_resource type="Script" path="res://components/connector.gd" id="4_ty7s8"]
+
+[node name="PipeBend" type="Node2D"]
+script = ExtResource("1_32u3x")
+
+[node name="Empty" type="Sprite2D" parent="."]
+texture = ExtResource("1_w2y14")
+
+[node name="Full" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("2_nwjce")
+
+[node name="Connector" type="Area2D" parent="."]
+script = ExtResource("4_ty7s8")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Connector"]
+polygon = PackedVector2Array(152, 184, 152, 248, -152, 248, -152, 168, -120, 168, -112, 120, -80, 40, -8, -48, 64, -88, 165.975, -119.604, 168, -152, 232, -152, 256, -136, 256, 136, 232, 144, 176, 144)

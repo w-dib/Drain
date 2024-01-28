@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://dqnbplkduxrdj"]
+
+[ext_resource type="PackedScene" uid="uid://bbfc0y3ntlrc3" path="res://scenes/pipes/pipebend.tscn" id="1_4kwuh"]
+[ext_resource type="PackedScene" uid="uid://duw17gfvi16lf" path="res://scenes/pipes/pipecross.tscn" id="2_6nnnu"]
+[ext_resource type="PackedScene" uid="uid://b13rqo3by7vow" path="res://scenes/pipes/pipestraight.tscn" id="3_mriqg"]
+[ext_resource type="PackedScene" uid="uid://bncpnm36q2xpv" path="res://scenes/pipes/pipetshape.tscn" id="4_tl3qx"]
+
+[node name="Main" type="Node2D"]
+position = Vector2(504, 648)
+scale = Vector2(0.4, 0.4)
+
+[node name="PipeBend" parent="." instance=ExtResource("1_4kwuh")]
+position = Vector2(1080, -780)
+rotation = 1.5708
+
+[node name="PipeTShape" parent="." instance=ExtResource("2_6nnnu")]
+position = Vector2(600, -780)
+
+[node name="PipeBend2" parent="." instance=ExtResource("1_4kwuh")]
+position = Vector2(-960, -780)
+
+[node name="PipeTShape2" parent="." instance=ExtResource("2_6nnnu")]
+position = Vector2(120, -300)
+
+[node name="PipeStraight" parent="." instance=ExtResource("3_mriqg")]
+position = Vector2(-360, -780)
+
+[node name="PipeTShape3" parent="." instance=ExtResource("4_tl3qx")]
+position = Vector2(120, -780)
