@@ -14,7 +14,7 @@ position = Vector2(1080, -780)
 rotation = 1.5708
 
 [node name="PipeTShape" parent="." instance=ExtResource("2_6nnnu")]
-position = Vector2(600, -780)
+position = Vector2(600, -772.5)
 
 [node name="PipeBend2" parent="." instance=ExtResource("1_4kwuh")]
 position = Vector2(-840, -780)

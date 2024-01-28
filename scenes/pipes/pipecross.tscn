@@ -1,14 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://duw17gfvi16lf"]
+[gd_scene load_steps=5 format=3 uid="uid://duw17gfvi16lf"]
 
 [ext_resource type="Script" path="res://scenes/pipes/pipe.gd" id="1_00t1b"]
 [ext_resource type="Texture2D" uid="uid://dbbn3o67j1jie" path="res://assets/graphics/empty/tile003.png" id="2_ucsn8"]
 [ext_resource type="Texture2D" uid="uid://wiofjfuwnr08" path="res://assets/graphics/full/tile003.png" id="3_8vil5"]
-[ext_resource type="Script" path="res://components/connector.gd" id="4_k0w6i"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_trtmy"]
 size = Vector2(498, 496)
 
-[node name="PipeTShape" type="Node2D"]
+[node name="PipeTShape" type="Area2D"]
 script = ExtResource("1_00t1b")
 
 [node name="Empty" type="Sprite2D" parent="."]
@@ -18,9 +17,6 @@ texture = ExtResource("2_ucsn8")
 visible = false
 texture = ExtResource("3_8vil5")
 
-[node name="Connector" type="Area2D" parent="."]
-script = ExtResource("4_k0w6i")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Connector"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, 0)
 shape = SubResource("RectangleShape2D_trtmy")
