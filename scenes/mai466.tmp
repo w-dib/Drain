@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://dqnbplkduxrdj"]
+
+[ext_resource type="PackedScene" uid="uid://bbfc0y3ntlrc3" path="res://scenes/pipes/pipebend.tscn" id="1_4kwuh"]
+
+[node name="Main" type="Node2D"]
+position = Vector2(720, 600)
+scale = Vector2(0.4, 0.4)
+
+[node name="PipeBend" parent="." instance=ExtResource("1_4kwuh")]
+position = Vector2(-1080, -1020)
+rotation = 1.5708
+
+[node name="PipeBend2" parent="." instance=ExtResource("1_4kwuh")]
+position = Vector2(-1560, -1020)
+
+[node name="PipeBend3" parent="." instance=ExtResource("1_4kwuh")]
+position = Vector2(-1080, -540)
+rotation = -3.14159
+
+[node name="PipeBend4" parent="." instance=ExtResource("1_4kwuh")]
+position = Vector2(-1560, -540)
+rotation = -1.5708
