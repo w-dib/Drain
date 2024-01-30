@@ -1,14 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://duw17gfvi16lf"]
+[gd_scene load_steps=5 format=3 uid="uid://duw17gfvi16lf"]
 
 [ext_resource type="Script" path="res://scenes/pipes/pipe.gd" id="1_00t1b"]
 [ext_resource type="Texture2D" uid="uid://dbbn3o67j1jie" path="res://assets/graphics/empty/tile003.png" id="2_ucsn8"]
 [ext_resource type="Texture2D" uid="uid://wiofjfuwnr08" path="res://assets/graphics/full/tile003.png" id="3_8vil5"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xieuw"]
+size = Vector2(288, 20)
+
 [node name="PipeTShape" type="Area2D"]
 script = ExtResource("1_00t1b")
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-polygon = PackedVector2Array(-152, -248, 152, -248, 152, -152, 256, -152, 256, 152, 152, 152, 152, 248, -152, 248, -152, 152, -248, 152, -248, -152, -152, -152, -152, -248)
 
 [node name="Empty" type="Sprite2D" parent="."]
 texture = ExtResource("2_ucsn8")
@@ -16,3 +16,21 @@ texture = ExtResource("2_ucsn8")
 [node name="Full" type="Sprite2D" parent="."]
 visible = false
 texture = ExtResource("3_8vil5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -243)
+shape = SubResource("RectangleShape2D_xieuw")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(0, 244)
+shape = SubResource("RectangleShape2D_xieuw")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(-240, 0)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_xieuw")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
+position = Vector2(240, 0)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_xieuw")
