@@ -9,7 +9,7 @@
 scale = Vector2(0.4, 0.4)
 
 [node name="TopRight" parent="." instance=ExtResource("1_4kwuh")]
-position = Vector2(780, 280)
+position = Vector2(1740, 280)
 rotation = 1.5708
 
 [node name="TopLeft" parent="." instance=ExtResource("1_4kwuh")]
@@ -24,10 +24,10 @@ position = Vector2(300, 760)
 rotation = -1.5708
 
 [node name="PipeTShape" parent="." instance=ExtResource("2_vaidb")]
-position = Vector2(2020, 260)
+position = Vector2(1260, 280)
 
 [node name="PipeStraight" parent="." instance=ExtResource("3_25lma")]
 position = Vector2(1260, 760)
 
 [node name="PipeTShape2" parent="." instance=ExtResource("4_k8enr")]
-position = Vector2(1540, 260)
+position = Vector2(780, 280)
