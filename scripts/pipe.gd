@@ -5,14 +5,19 @@ extends Node2D
 
 var pipe_ends := [PipeEnd]
 
-func _ready() -> void:
+func _ready() -> void:	
+	randomize()
+	spawn_rotation()
 	pipe_ends = get_pipe_ends()
 	for pipe in pipe_ends:
 		pipe.fill.connect(check_pipes)
 		pipe.empty.connect(check_pipes)
 
 func _input(event):
+	if event.is_action_pressed("quit"):
+		get_tree().quit()
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+#		check_loop()
 		if empty.get_rect().has_point(to_local(event.position)):
 			rotate_pipe()
 
@@ -50,3 +55,7 @@ func check_loop():
 			break
 	if loop:
 		queue_free()
+
+func spawn_rotation():
+	var angles = [0,90,180,270]
+	rotation_degrees = angles[randi() % angles.size()]

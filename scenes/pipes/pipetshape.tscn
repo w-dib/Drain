@@ -9,6 +9,7 @@
 size = Vector2(20, 304)
 
 [node name="PipeTShape" type="Node2D"]
+scale = Vector2(0.5, 0.5)
 script = ExtResource("1_lvvtt")
 
 [node name="Empty" type="Sprite2D" parent="."]
@@ -33,9 +34,10 @@ position = Vector2(-240, 0)
 shape = SubResource("RectangleShape2D_bv4h5")
 
 [node name="PipeEnd3" type="Area2D" parent="."]
+position = Vector2(256, 248)
 script = ExtResource("4_wwjsq")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="PipeEnd3"]
-position = Vector2(0, 232)
+position = Vector2(-256, -16)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_bv4h5")

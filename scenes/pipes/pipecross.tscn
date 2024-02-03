@@ -9,6 +9,7 @@
 size = Vector2(288, 20)
 
 [node name="PipeCross" type="Node2D"]
+scale = Vector2(0.5, 0.5)
 script = ExtResource("1_m5dxe")
 
 [node name="Empty" type="Sprite2D" parent="."]

@@ -9,6 +9,7 @@
 size = Vector2(16, 304)
 
 [node name="PipeBend" type="Node2D"]
+scale = Vector2(0.5, 0.5)
 script = ExtResource("1_tbjgf")
 
 [node name="Empty" type="Sprite2D" parent="."]
@@ -30,5 +31,5 @@ shape = SubResource("RectangleShape2D_g4rwk")
 script = ExtResource("2_7s4i7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PipeEnd2"]
-position = Vector2(240, 0)
+position = Vector2(244, 0)
 shape = SubResource("RectangleShape2D_g4rwk")
