@@ -1,14 +1,25 @@
 extends Node2D
 
-var grid_size = Vector2(6, 4) # Grid dimensions
-var cell_size = Vector2(244, 244) # Size of each cell in pixels
+var grid_size = Vector2(6, 4)
+var cell_size = Vector2(244, 244)
 
 var pipe_scenes = [
+#7x
 	preload("res://scenes/pipes/pipebend.tscn"), 
 	preload("res://scenes/pipes/pipebend.tscn"), 
-	preload("res://scenes/pipes/pipecross.tscn"), 
+	preload("res://scenes/pipes/pipebend.tscn"), 
+	preload("res://scenes/pipes/pipebend.tscn"),
+	preload("res://scenes/pipes/pipebend.tscn"),
+	preload("res://scenes/pipes/pipebend.tscn"),
+	preload("res://scenes/pipes/pipebend.tscn"),
+#4x
 	preload("res://scenes/pipes/pipestraight.tscn"),
 	preload("res://scenes/pipes/pipestraight.tscn"), 
+	preload("res://scenes/pipes/pipestraight.tscn"),
+	preload("res://scenes/pipes/pipestraight.tscn"), 
+#1x
+	preload("res://scenes/pipes/pipecross.tscn"),
+#1x
 	preload("res://scenes/pipes/pipetshape.tscn")
 	]
 
