@@ -1,50 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://dqnbplkduxrdj"]
+[gd_scene load_steps=2 format=3 uid="uid://dqnbplkduxrdj"]
 
-[ext_resource type="PackedScene" uid="uid://bbfc0y3ntlrc3" path="res://scenes/pipes/pipebend.tscn" id="1_4kwuh"]
 [ext_resource type="Script" path="res://scenes/main.gd" id="1_ewvgh"]
-[ext_resource type="PackedScene" uid="uid://duw17gfvi16lf" path="res://scenes/pipes/pipecross.tscn" id="2_vaidb"]
-[ext_resource type="PackedScene" uid="uid://b13rqo3by7vow" path="res://scenes/pipes/pipestraight.tscn" id="3_25lma"]
-[ext_resource type="PackedScene" uid="uid://bncpnm36q2xpv" path="res://scenes/pipes/pipetshape.tscn" id="4_k8enr"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_ewvgh")
-
-[node name="TopRight" parent="." instance=ExtResource("1_4kwuh")]
-position = Vector2(1340, 122)
-rotation = 1.5708
-
-[node name="TopLeft" parent="." instance=ExtResource("1_4kwuh")]
-position = Vector2(852, 122)
-
-[node name="TopLeft2" parent="." instance=ExtResource("1_4kwuh")]
-position = Vector2(852, 610)
-
-[node name="BottomRight" parent="." instance=ExtResource("1_4kwuh")]
-position = Vector2(1340, 366)
-rotation = -3.14159
-
-[node name="BottomRight2" parent="." instance=ExtResource("1_4kwuh")]
-position = Vector2(1340, 610)
-rotation = -3.14159
-
-[node name="BottomRight3" parent="." instance=ExtResource("1_4kwuh")]
-position = Vector2(1340, 854)
-rotation = -3.14159
-
-[node name="BottomLeft" parent="." instance=ExtResource("1_4kwuh")]
-position = Vector2(1096, 366)
-
-[node name="BottomLeft2" parent="." instance=ExtResource("1_4kwuh")]
-position = Vector2(1096, 854)
-
-[node name="PipeStraight" parent="." instance=ExtResource("3_25lma")]
-position = Vector2(1096, 122)
-
-[node name="PipeStraight3" parent="." instance=ExtResource("3_25lma")]
-position = Vector2(852, 366)
-
-[node name="PipeTShape2" parent="." instance=ExtResource("4_k8enr")]
-position = Vector2(366, 366)
-
-[node name="PipeCross" parent="." instance=ExtResource("2_vaidb")]
-position = Vector2(1096, 610)

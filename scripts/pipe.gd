@@ -17,9 +17,9 @@ func _input(event):
 	if event.is_action_pressed("quit"):
 		get_tree().quit()
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
-#		check_loop()
 		if empty.get_rect().has_point(to_local(event.position)):
 			rotate_pipe()
+#		check_loop()
 
 func rotate_pipe():
 	rotation_degrees += 90
